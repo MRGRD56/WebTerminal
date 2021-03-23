@@ -1,0 +1,8 @@
+﻿@page "/"
+
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "WebTerminal";
+}
+
+@(await Html.RenderComponentAsync<TerminalComponent>(RenderMode.ServerPrerendered))

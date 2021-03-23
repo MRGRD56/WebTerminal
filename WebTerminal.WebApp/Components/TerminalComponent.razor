@@ -1,0 +1,44 @@
+﻿@using Microsoft.AspNetCore.Components.Web
+<div class="terminal">
+    <div class="output">
+        @if (TerminalService.Output != null)
+        {
+            @(new MarkupString(TerminalService.Output.Replace("\n", "<br>")))
+        }
+    </div>
+    <div class="input-container">
+        <div class="no-select">$ </div>
+        <input type="text" class="input" @bind="Input" @bind:event="oninput" @onkeypress="OnInputKeyPress"
+               autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+    </div>
+</div>
+
+@code {
+    private string Input { get; set; }
+
+    //private void WriteLine(string text) => Output += $"{text}<br>";
+
+    private void OnInputKeyPress(KeyboardEventArgs args)
+    {
+        if (args.Key != "Enter") return;
+        
+        //WriteLine($"$ {Input}");
+        TerminalService.InputLine(Input);
+        Input = "";
+        StateHasChanged();
+    }
+
+    protected override void OnInitialized()
+    {
+        TerminalService.OnAfterOutput += async () => await InvokeAsync(StateHasChanged);
+    }
+
+    protected override async void OnAfterRender(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JS.InvokeVoidAsync("initializeTerminalClicks");
+        }
+    }
+
+}

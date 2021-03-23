@@ -1,0 +1,59 @@
+﻿body {
+    margin: 0;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+.terminal {
+    height: calc(100% - 20px);
+    overflow-wrap: break-word;
+}
+
+.terminal {
+    padding: 10px;
+    font-family: "JetBrains Mono", "Consolas", monospace;
+    background: #212121;
+    color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.terminal .output::selection,
+.terminal .input::selection {
+    background: #fafafa;
+    color: #212121;
+}
+
+.terminal .input {
+    /*margin-left: 6.5px;*/
+    background: #212121;
+    color: #fafafa;
+    border: none;
+    font-family: "JetBrains Mono", "Consolas", monospace;
+    font-size: 14px;
+    flex-basis: 100%;
+    padding: 0;
+}
+
+.terminal .input:focus {
+    outline: none;
+}
+
+.input-container {
+    display: flex;
+    justify-content: inherit;
+}
+
+.no-select {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
