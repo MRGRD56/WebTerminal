@@ -1,0 +1,10 @@
+﻿{
+	"ProcessInfo": {
+		"Name": "pwsh.exe",
+		"Arguments": "-wd C:\\"
+	},
+	"StartCommands": [
+		"Add-Type -AssemblyName PresentationFramework",
+		"using namespace System.Windows"
+	]
+}

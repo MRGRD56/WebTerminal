@@ -84,3 +84,5 @@ C:\Users\SU\source\repos\WebTerminal\WebTerminal.WebApp\obj\Debug\net5.0\ref\Web
 C:\Users\SU\source\repos\WebTerminal\WebTerminal.WebApp\obj\Debug\net5.0\WebTerminal.WebApp.pdb
 C:\Users\SU\source\repos\WebTerminal\WebTerminal.WebApp\obj\Debug\net5.0\WebTerminal.WebApp.genruntimeconfig.cache
 C:\Users\SU\source\repos\WebTerminal\WebTerminal.WebApp\obj\Debug\net5.0\WebTerminal.WebApp.csproj.CopyComplete
+C:\Users\1\RiderProjects\WebTerminal\WebTerminal.WebApp\bin\Debug\net5.0\Properties\terminalSettings.json
+C:\Users\1\RiderProjects\WebTerminal\WebTerminal.WebApp\bin\Debug\net5.0\Newtonsoft.Json.dll

@@ -14,7 +14,7 @@ namespace WebTerminal.WebApp
     {
         public static void Main(string[] args)
         {
-            TerminalService.Initialize();
+            Terminal.Initialize();
             CreateHostBuilder(args).Build().Run();
         }
 

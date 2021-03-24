@@ -4,11 +4,7 @@
     <projectFile>WebTerminal.WebApp/WebTerminal.WebApp.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c10ff228-646c-48dc-bbee-fc8e92732f2f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.WebTerminal/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebTerminal/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebTerminal.WebApp/Components/TerminalComponent.razor" beforeDir="false" afterPath="$PROJECT_DIR$/WebTerminal.WebApp/Components/TerminalComponent.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebTerminal.WebApp/wwwroot/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebTerminal.WebApp/wwwroot/css/style.css" afterDir="false" />
-    </list>
+    <list default="true" id="c10ff228-646c-48dc-bbee-fc8e92732f2f" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,17 +16,16 @@
         <option value="CSS File" />
         <option value="TypeScript File" />
         <option value="tsconfig.json" />
+        <option value="JSON File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/WebTerminal.WebApp/obj/Debug/net5.0/Razor/_Imports.razor.g.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/SU/source/repos/WebTerminal/WebTerminal.WebApp/obj/Debug/net5.0/Razor/_Imports.razor.g.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/935A04EE-D40D-42D7-90DD-4DED04626D07/13/Process.Windows.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F3DD31A3-D437-4D7D-9525-D887480DAE95/233/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -48,20 +43,26 @@
       <option value="$PROJECT_DIR$/WebTerminal.WebApp/Pages/Shared/_Layout.cshtml" />
       <option value="$PROJECT_DIR$/WebTerminal.WebApp/Program.cs" />
       <option value="$PROJECT_DIR$/WebTerminal.WebApp/TerminalService.cs" />
-      <option value="$PROJECT_DIR$/WebTerminal.WebApp/Properties/launchSettings.json" />
       <option value="$PROJECT_DIR$/WebTerminal.WebApp/wwwroot/js/src/terminal.ts" />
-      <option value="$PROJECT_DIR$/WebTerminal.WebApp/Static/TerminalService.cs" />
-      <option value="$PROJECT_DIR$/WebTerminal.WebApp/wwwroot/css/style.css" />
       <option value="$PROJECT_DIR$/WebTerminal.WebApp/Components/TerminalComponent.razor" />
+      <option value="$PROJECT_DIR$/WebTerminal.WebApp/Properties/launchSettings.json" />
+      <option value="$PROJECT_DIR$/WebTerminal.WebApp/Static/TerminalService.cs" />
+      <option value="$PROJECT_DIR$/WebTerminal.WebApp/appsettings.json" />
+      <option value="$PROJECT_DIR$/WebTerminal.WebApp/Static/Helpers/TerminalProcessInfo.cs" />
+      <option value="$PROJECT_DIR$/WebTerminal.WebApp/Static/TerminalSettings.cs" />
+      <option value="$PROJECT_DIR$/WebTerminal.WebApp/Properties/terminalSettings.json" />
+      <option value="$PROJECT_DIR$/WebTerminal.WebApp/wwwroot/css/style.css" />
+      <option value="$PROJECT_DIR$/WebTerminal.WebApp/Static/Terminal.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1qA3P3SIiYMzBjKHDsQ66SJyAus" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.35048753" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.35026455" />
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />

@@ -2,9 +2,9 @@
 @using WebTerminal.WebApp.Static
 <div class="terminal">
     <div class="output">
-        @if (TerminalService.Output != null)
+        @if (Terminal.Output != null)
         {
-            @(new MarkupString(TerminalService.Output
+            @(new MarkupString(Terminal.Output
                 .Replace("\n", "<br>")
                 .Replace("\t", "&#9;")
                 .Replace(" ", "&nbsp;")))
@@ -27,14 +27,14 @@
         if (args.Key != "Enter") return;
         
         //WriteLine($"$ {Input}");
-        TerminalService.InputLine(Input);
+        Terminal.RunCommand(Input);
         Input = "";
         StateHasChanged();
     }
 
     protected override void OnInitialized()
     {
-        TerminalService.OnAfterOutput += async () => await InvokeAsync(StateHasChanged);
+        Terminal.OnAfterOutput += async () => await InvokeAsync(StateHasChanged);
     }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)

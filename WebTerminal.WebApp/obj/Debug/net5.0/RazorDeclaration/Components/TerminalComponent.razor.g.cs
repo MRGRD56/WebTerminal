@@ -8,98 +8,98 @@ namespace WebTerminal.WebApp.Components
 {
     #line hidden
 #nullable restore
-#line 1 "C:\Users\SU\source\repos\WebTerminal\WebTerminal.WebApp\_Imports.razor"
+#line 1 "C:\Users\1\RiderProjects\WebTerminal\WebTerminal.WebApp\_Imports.razor"
 using System;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\SU\source\repos\WebTerminal\WebTerminal.WebApp\_Imports.razor"
+#line 2 "C:\Users\1\RiderProjects\WebTerminal\WebTerminal.WebApp\_Imports.razor"
 using System.Collections.Generic;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\SU\source\repos\WebTerminal\WebTerminal.WebApp\_Imports.razor"
+#line 3 "C:\Users\1\RiderProjects\WebTerminal\WebTerminal.WebApp\_Imports.razor"
 using System.Linq;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\SU\source\repos\WebTerminal\WebTerminal.WebApp\_Imports.razor"
+#line 4 "C:\Users\1\RiderProjects\WebTerminal\WebTerminal.WebApp\_Imports.razor"
 using System.Threading.Tasks;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "C:\Users\SU\source\repos\WebTerminal\WebTerminal.WebApp\_Imports.razor"
+#line 5 "C:\Users\1\RiderProjects\WebTerminal\WebTerminal.WebApp\_Imports.razor"
 using Microsoft.AspNetCore.Builder;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "C:\Users\SU\source\repos\WebTerminal\WebTerminal.WebApp\_Imports.razor"
+#line 6 "C:\Users\1\RiderProjects\WebTerminal\WebTerminal.WebApp\_Imports.razor"
 using Microsoft.AspNetCore.Components;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "C:\Users\SU\source\repos\WebTerminal\WebTerminal.WebApp\_Imports.razor"
+#line 7 "C:\Users\1\RiderProjects\WebTerminal\WebTerminal.WebApp\_Imports.razor"
 using Microsoft.AspNetCore.Hosting;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "C:\Users\SU\source\repos\WebTerminal\WebTerminal.WebApp\_Imports.razor"
+#line 8 "C:\Users\1\RiderProjects\WebTerminal\WebTerminal.WebApp\_Imports.razor"
 using Microsoft.AspNetCore.HttpsPolicy;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "C:\Users\SU\source\repos\WebTerminal\WebTerminal.WebApp\_Imports.razor"
+#line 9 "C:\Users\1\RiderProjects\WebTerminal\WebTerminal.WebApp\_Imports.razor"
 using Microsoft.Extensions.Configuration;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "C:\Users\SU\source\repos\WebTerminal\WebTerminal.WebApp\_Imports.razor"
+#line 10 "C:\Users\1\RiderProjects\WebTerminal\WebTerminal.WebApp\_Imports.razor"
 using Microsoft.Extensions.DependencyInjection;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 11 "C:\Users\SU\source\repos\WebTerminal\WebTerminal.WebApp\_Imports.razor"
+#line 11 "C:\Users\1\RiderProjects\WebTerminal\WebTerminal.WebApp\_Imports.razor"
 using Microsoft.Extensions.Hosting;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 12 "C:\Users\SU\source\repos\WebTerminal\WebTerminal.WebApp\_Imports.razor"
+#line 12 "C:\Users\1\RiderProjects\WebTerminal\WebTerminal.WebApp\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 1 "C:\Users\SU\source\repos\WebTerminal\WebTerminal.WebApp\Components\TerminalComponent.razor"
+#line 1 "C:\Users\1\RiderProjects\WebTerminal\WebTerminal.WebApp\Components\TerminalComponent.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\SU\source\repos\WebTerminal\WebTerminal.WebApp\Components\TerminalComponent.razor"
+#line 2 "C:\Users\1\RiderProjects\WebTerminal\WebTerminal.WebApp\Components\TerminalComponent.razor"
 using WebTerminal.WebApp.Static;
 
 #line default
@@ -113,7 +113,7 @@ using WebTerminal.WebApp.Static;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 20 "C:\Users\SU\source\repos\WebTerminal\WebTerminal.WebApp\Components\TerminalComponent.razor"
+#line 20 "C:\Users\1\RiderProjects\WebTerminal\WebTerminal.WebApp\Components\TerminalComponent.razor"
        
     private string Input { get; set; }
 
@@ -124,14 +124,14 @@ using WebTerminal.WebApp.Static;
         if (args.Key != "Enter") return;
         
         //WriteLine($"$ {Input}");
-        TerminalService.InputLine(Input);
+        Terminal.RunCommand(Input);
         Input = "";
         StateHasChanged();
     }
 
     protected override void OnInitialized()
     {
-        TerminalService.OnAfterOutput += async () => await InvokeAsync(StateHasChanged);
+        Terminal.OnAfterOutput += async () => await InvokeAsync(StateHasChanged);
     }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
