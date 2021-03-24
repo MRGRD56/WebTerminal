@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\1\\RiderProjects\\WebTerminal\\WebTerminal.WebApp\\WebTerminal.WebApp.csproj": {}
+    "C:\\Users\\SU\\source\\repos\\WebTerminal\\WebTerminal.WebApp\\WebTerminal.WebApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\1\\RiderProjects\\WebTerminal\\WebTerminal.WebApp\\WebTerminal.WebApp.csproj": {
+    "C:\\Users\\SU\\source\\repos\\WebTerminal\\WebTerminal.WebApp\\WebTerminal.WebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\1\\RiderProjects\\WebTerminal\\WebTerminal.WebApp\\WebTerminal.WebApp.csproj",
+        "projectUniqueName": "C:\\Users\\SU\\source\\repos\\WebTerminal\\WebTerminal.WebApp\\WebTerminal.WebApp.csproj",
         "projectName": "WebTerminal.WebApp",
-        "projectPath": "C:\\Users\\1\\RiderProjects\\WebTerminal\\WebTerminal.WebApp\\WebTerminal.WebApp.csproj",
-        "packagesPath": "C:\\Users\\1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\1\\RiderProjects\\WebTerminal\\WebTerminal.WebApp\\obj\\",
+        "projectPath": "C:\\Users\\SU\\source\\repos\\WebTerminal\\WebTerminal.WebApp\\WebTerminal.WebApp.csproj",
+        "packagesPath": "C:\\Users\\SU\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\SU\\source\\repos\\WebTerminal\\WebTerminal.WebApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet"
         ],
         "configFilePaths": [
-          "C:\\Users\\1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\SU\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],

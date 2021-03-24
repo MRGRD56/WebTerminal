@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\1\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\1\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_WebTerminal.-1681052270.00" t="ExcludeRecursive" />
-    <e p="C:\Users\1\AppData\Roaming\JetBrains\Rider2020.3\consoles\db" t="IncludeRecursive" />
-    <e p="C:\Users\1\AppData\Roaming\JetBrains\Rider2020.3\extensions" t="IncludeRecursive" />
-    <e p="C:\Users\1\RiderProjects\WebTerminal" t="IncludeFlat">
+    <e p="C:\Users\SU\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\SU\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_WebTerminal.-892889853.00" t="ExcludeRecursive" />
+    <e p="C:\Users\SU\AppData\Roaming\JetBrains\Rider2020.3\consoles\db" t="IncludeRecursive" />
+    <e p="C:\Users\SU\AppData\Roaming\JetBrains\Rider2020.3\extensions" t="IncludeRecursive" />
+    <e p="C:\Users\SU\AppData\Roaming\JetBrains\Rider2020.3\scratches" t="IncludeRecursive" />
+    <e p="C:\Users\SU\source\repos\WebTerminal" t="IncludeFlat">
       <e p="packages" t="ExcludeRecursive" />
       <e p="WebTerminal.sln" t="IncludeFlat" />
       <e p="WebTerminal.WebApp" t="IncludeRecursive">
@@ -20,6 +21,7 @@
           <e p="Debug" t="Include">
             <e p="net5.0" t="Include">
               <e p="WebTerminal.WebApp.AssemblyInfo.cs" t="Include" />
+              <e p="WebTerminal.WebApp.RazorAssemblyInfo.cs" t="Include" />
             </e>
           </e>
         </e>
@@ -37,7 +39,9 @@
           <e p="launchSettings.json" t="Include" />
         </e>
         <e p="Startup.cs" t="Include" />
-        <e p="TerminalService.cs" t="Include" />
+        <e p="Static" t="Include">
+          <e p="TerminalService.cs" t="Include" />
+        </e>
         <e p="WebTerminal.WebApp.csproj" t="IncludeRecursive" />
         <e p="wwwroot" t="Include">
           <e p="css" t="Include">

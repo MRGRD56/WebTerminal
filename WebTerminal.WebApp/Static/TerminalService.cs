@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
-using System.Threading.Tasks;
 
-namespace WebTerminal.WebApp
+namespace WebTerminal.WebApp.Static
 {
     public static class TerminalService
     {
@@ -20,9 +19,21 @@ namespace WebTerminal.WebApp
 
         public static void InputLine(string content)
         {
-            ConsoleProcess.CancelOutputRead();
-            ConsoleProcess.StandardInput.WriteLine(content);
-            ConsoleProcess.BeginOutputReadLine();
+            if (content.Trim() is "[System.Console]::Clear()" or "clear" or "cls")
+            {
+                Output = "";
+            }
+
+            if (content.Trim().ToLower() == "@reset")
+            {
+                Output = "";
+                ConsoleProcess.Kill();
+                StartProcess();
+            }
+            else
+            {
+                ConsoleProcess.StandardInput.WriteLine(content);
+            }
         }
 
         public static string Output { get; private set; }
@@ -44,7 +55,7 @@ namespace WebTerminal.WebApp
 
         public static void Initialize()
         {
-            ConsoleProcessInfo = new ProcessStartInfo("pwsh.exe")
+            ConsoleProcessInfo = new ProcessStartInfo("powershell.exe")
             {
                 UseShellExecute = false,
                 RedirectStandardInput = true,
@@ -52,6 +63,11 @@ namespace WebTerminal.WebApp
                 CreateNoWindow = true
             };
 
+            StartProcess();
+        }
+
+        private static void StartProcess()
+        {
             ConsoleProcess = Process.Start(ConsoleProcessInfo);
             ConsoleProcess.BeginOutputReadLine();
             ConsoleProcess.OutputDataReceived += (sender, args) =>

@@ -1,9 +1,13 @@
 ﻿@using Microsoft.AspNetCore.Components.Web
+@using WebTerminal.WebApp.Static
 <div class="terminal">
     <div class="output">
         @if (TerminalService.Output != null)
         {
-            @(new MarkupString(TerminalService.Output.Replace("\n", "<br>")))
+            @(new MarkupString(TerminalService.Output
+                .Replace("\n", "<br>")
+                .Replace("\t", "&#9;")
+                .Replace(" ", "&nbsp;")))
         }
     </div>
     <div class="input-container">
@@ -30,14 +34,19 @@
 
     protected override void OnInitialized()
     {
-        TerminalService.OnAfterOutput += async () => await InvokeAsync(StateHasChanged);
+        TerminalService.OnAfterOutput += async () => await InvokeAsync(() =>
+        {
+            StateHasChanged();
+            JS.InvokeVoidAsync("scrollToBottom");
+        });
     }
 
-    protected override async void OnAfterRender(bool firstRender)
+    protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         if (firstRender)
         {
             await JS.InvokeVoidAsync("initializeTerminalClicks");
+            await JS.InvokeVoidAsync("scrollToBottom");
         }
     }
 
