@@ -131,11 +131,7 @@ using WebTerminal.WebApp.Static;
 
     protected override void OnInitialized()
     {
-        TerminalService.OnAfterOutput += async () => await InvokeAsync(() =>
-        {
-            StateHasChanged();
-            JS.InvokeVoidAsync("scrollToBottom");
-        });
+        TerminalService.OnAfterOutput += async () => await InvokeAsync(StateHasChanged);
     }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
@@ -143,8 +139,9 @@ using WebTerminal.WebApp.Static;
         if (firstRender)
         {
             await JS.InvokeVoidAsync("initializeTerminalClicks");
-            await JS.InvokeVoidAsync("scrollToBottom");
         }
+        
+        await JS.InvokeVoidAsync("scrollToBottom");
     }
 
 
