@@ -40,7 +40,6 @@
       <option value="$PROJECT_DIR$/WebTerminal.WebApp/Pages/Index.cshtml" />
       <option value="$PROJECT_DIR$/WebTerminal.WebApp/Startup.cs" />
       <option value="$PROJECT_DIR$/WebTerminal.WebApp/_Imports.razor" />
-      <option value="$PROJECT_DIR$/WebTerminal.WebApp/Pages/Shared/_Layout.cshtml" />
       <option value="$PROJECT_DIR$/WebTerminal.WebApp/Program.cs" />
       <option value="$PROJECT_DIR$/WebTerminal.WebApp/TerminalService.cs" />
       <option value="$PROJECT_DIR$/WebTerminal.WebApp/wwwroot/js/src/terminal.ts" />
@@ -53,6 +52,7 @@
       <option value="$PROJECT_DIR$/WebTerminal.WebApp/Properties/terminalSettings.json" />
       <option value="$PROJECT_DIR$/WebTerminal.WebApp/wwwroot/css/style.css" />
       <option value="$PROJECT_DIR$/WebTerminal.WebApp/Static/Terminal.cs" />
+      <option value="$PROJECT_DIR$/WebTerminal.WebApp/Pages/Shared/_Layout.cshtml" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1qA3P3SIiYMzBjKHDsQ66SJyAus" />

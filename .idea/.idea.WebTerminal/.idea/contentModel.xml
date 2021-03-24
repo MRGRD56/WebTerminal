@@ -51,6 +51,7 @@
           <e p="css" t="Include">
             <e p="style.css" t="Include" />
           </e>
+          <e p="favicon.svg" t="Include" />
           <e p="js" t="Include">
             <e p="dist" t="Include">
               <e p="terminal.js" t="Include" />
