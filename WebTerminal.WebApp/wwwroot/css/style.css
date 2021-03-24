@@ -9,7 +9,6 @@ body {
 }
 
 .terminal {
-    height: calc(100% - 20px);
     overflow-wrap: break-word;
 }
 
@@ -24,8 +23,7 @@ body {
 }
 
 .terminal::selection,
-.terminal .output::selection,
-.terminal .input::selection {
+.terminal *::selection {
     background: #fafafa;
     color: #212121;
 }
